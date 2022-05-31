@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Cyberware</title>
+<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="css/flickity.min.css">
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+<link href="css/aos.css" rel="stylesheet">
+
+</head>
+<body id="body">
+<header>
+	<div class="container">
+		<div class="row">
+			<div class="col-8 col-sm-4 col-md-4 col-lg-3">
+				<a href="index.html" class="logo">
+					<img src="images/logo.png" class="img-fluid" alt="Cyberware" />
+				</a>
+			</div>
+			<div class="col-4 col-sm-8 col-md-8 col-lg-9">
+				<div class="navigation" style="display:none;">
+					<span class="nav-icon">
+						<img src="images/nav.png" class="img-fluid" alt="" />
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section class="why-us-wrapper">
+	<div class="container">
+		<div class="sub-heading" data-aos="fade-up" data-aos-duration="2000">
+			<h2><span>About</span> us</h2>
+
+			<p>We are Cyberware, a small but motivated company specializing in everything tech. We believe passionately in providing excellent service, which is why we commit ourselves to giving you the best of both.</p>
+			<p>If you’re looking for something new in the space of software, technology or business, you’re in the right place. We strive to be industrious and innovative, offering our customers something they want, putting their desires at the top of our priority list.</p>
+			
+		</div>
+	</div>
+</section>
+<section class="contactus-wrapper" id="contactus">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="contact-form">
+					<h2>Let's Talk</h2>
+					<form>
+					<div class="row">
+						<div class="col-sm-4 col-md-4 col-lg-4">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Name" required />
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-4 col-lg-4">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Email" required />
+							</div>
+						</div>
+						<div class="col-sm-4 col-md-4 col-lg-4">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Phone Number" required />
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-12 col-lg-12">
+							<div class="form-group">
+								<textarea class="form-control" placeholder="Tell us more..."></textarea>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-12 col-lg-12">
+							<button class="btn-custom">Contact Us</button> 
+						</div>
+					</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	
+<footer>
+	<div class="container">
+		<div class="row">
+			<!--
+			<div class="col-sm-12 col-md-6 col-lg-7">
+				<div class="footer-content">
+					<h2><span>Get in </span>Touch.</h2>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-6 col-lg-5">
+				<div class="contact-info">
+					<ul>
+						<li><a href="tel:9990090111"><span class="mobile-icon"><img src="images/call-icon.png" class="img-fluid" alt="" /></span>Call us at +91 9990090111</a></li>
+						<li><a href="mailto:info@cyberware.com"><span><img src="images/email-icon.png" class="img-fluid" alt="" /></span>Write us at info@cyberware.com</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-12 col-lg-12">
+				<div class="follow-wrap">
+					<p>Follow us on</p>
+					<ul>
+						<li><a href="#"><span class="instagram-icon"></span></a></li>
+						<li><a href="#"><span class="facebook-icon"></span></a></li>
+						<li><a href="#"><span class="linkdin-icon"></span></a></li>
+					</ul>
+				</div>
+			</div>
+				--->
+			<div class="col-lg-12">
+				<div class="copyright">
+					<p><a href="aboutus.html" style="color: #fff;">About Us</a> | <a href="contact.html" style="color: #fff;">Contact Us</a> | 
+						<a href="privacy-policy.html" style="color: #fff;">Privacy Policy</a> | <a href="terms.html" style="color: #fff;">Terms of Service</a> | 
+						<a href="refund-policy.html" style="color: #fff;">Refund Policy</a> | &copy; Copyright 2021. All Rights Reserved</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<a href="#body" class="backToTop hide" id="backToTop"><span><img src="images/top-arrow.png" class="img-fluid" alt="" /></span></a>
+ 
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/flickity.pkgd.min.js"></script>
+<script src="js/aos.js"></script>
+<script>
+
+	//Animation function
+	AOS.init({
+		easing: 'ease-out-back',
+		duration: 1000
+	});
+
+	$(document).scroll(function() {
+        myID = document.getElementById("backToTop");
+        var myScrollFunc = function () {
+            var y = window.scrollY;
+            if (y >= 10) {
+                myID.className = "backToTop show"
+            } else {
+                myID.className = "backToTop hide"
+            }
+        };
+        window.addEventListener("scroll", myScrollFunc);
+    });
+	
+	$('#carouselExampleFade').carousel({
+		interval: 3000,
+    cycle: true,
+    pause: "null"
+	}); 
+</script>
+</html>
